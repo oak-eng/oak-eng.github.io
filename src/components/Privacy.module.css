@@ -1,0 +1,14 @@
+.privacy-container{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.privacy-header {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+}
