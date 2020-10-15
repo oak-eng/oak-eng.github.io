@@ -40,6 +40,17 @@ a.black-link:visited {
   box-shadow: 0 15px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.medium-card-container {
+  padding-top: 1rem;
+}
+
+.medium-card-container-mobile {
+  align-items: center;
+  margin: auto;
+  padding-top: 1rem;
+  width: 75%;
+}
+
 .contact {
   text-align: center;
 }
@@ -58,22 +69,11 @@ a.black-link:visited {
   font-size: 1.25rem;
 }
 
-.marquee-mobile {
-  background-image: url("/oak_marquee.jpg");
-  background-position: center;
-  background-size: cover;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  font-size: 1.25rem;
-}
-
 .marquee-button {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 .oak-row {
@@ -81,6 +81,13 @@ a.black-link:visited {
   padding-bottom: 5rem;
   padding-left: 7.5rem;
   padding-right: 7.5rem;
+}
+
+.oak-row-mobile {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .oak-subtitle {
@@ -94,25 +101,6 @@ a.black-link:visited {
 .oak-title {
   padding-bottom: 4rem;
   font-size: 5rem;
-}
-
-.read-more {
-  background-color: black;
-  border: none;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.read-more:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .testimonial {

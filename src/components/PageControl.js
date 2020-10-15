@@ -28,12 +28,10 @@ export default function PageControl() {
         stackable
         divided
       >
-        <Grid.Row only='tablet mobile'>
-          <Grid.Column>
-            <Pages mobile={true}/>
-          </Grid.Column>
+        <Grid.Row only='mobile'>
+          <Pages mobile={true}/>
         </Grid.Row>
-        <Grid.Row only='computer'>
+        <Grid.Row only='computer tablet'>
           <Grid.Column>
             <Pages />
           </Grid.Column>

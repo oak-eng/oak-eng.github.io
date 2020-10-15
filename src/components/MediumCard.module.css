@@ -1,0 +1,18 @@
+.read-more {
+  background-color: black;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
