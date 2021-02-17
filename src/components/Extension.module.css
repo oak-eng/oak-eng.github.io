@@ -28,6 +28,23 @@ a.black-link:visited {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
+.form-submit-button {
+  background-color: rgba(255, 145, 77, 1);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.form-submit-button:hover {
+  background-color: rgba(159, 167, 254, 0.89);
+}
+
 .contact {
   text-align: center;
 }
