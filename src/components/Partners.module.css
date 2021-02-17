@@ -1,0 +1,13 @@
+.oak-row {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+}
+
+.oak-row-mobile {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

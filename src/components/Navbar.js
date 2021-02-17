@@ -24,6 +24,12 @@ export default function Navbar() {
         <Menu.Menu position="right">
           <Menu.Item active={pathname === "/"} as={Link} to="/" name="home" />
           <Menu.Item
+            active={pathname === "/partners"}
+            as={Link}
+            to="/partners"
+            name="partners"
+          />
+          <Menu.Item
             active={pathname === "/extension"}
             as={Link}
             to="/extension"

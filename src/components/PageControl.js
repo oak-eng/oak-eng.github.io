@@ -6,6 +6,7 @@ import Extension from "./Extension.js";
 import Footer from "./Footer.js";
 import Home from "./Home.js";
 import Navbar from "./Navbar.js";
+import Partners from "./Partners.js";
 import Privacy from "./Privacy.js";
 
 function Pages({ mobile }) {
@@ -19,6 +20,9 @@ function Pages({ mobile }) {
       </Route>
       <Route exact path="/extension">
         <Extension />
+      </Route>
+      <Route exact path="/partners">
+        <Partners />
       </Route>
     </Switch>
   );
