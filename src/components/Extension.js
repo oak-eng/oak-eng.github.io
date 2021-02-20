@@ -121,10 +121,14 @@ export default function Extension({ mobile }) {
                 Black-owned and compatible with your hair as you shop
               </h1>
 
-              <MailChimpSignup
-                signupOpen={signupOpen}
-                setSignupOpen={setSignupOpen}
-              />
+              <a
+                className={styles["button"]}
+                href="https://chrome.google.com/webstore/detail/oak/ohenjpijmmigfbdbfnmdbonooeihehak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                download for free now
+              </a>
             </Grid.Column>
             <Grid.Column>
               <Image
@@ -216,10 +220,14 @@ export default function Extension({ mobile }) {
               </h1>
             </Grid.Column>
             <Grid.Column>
-              <MailChimpSignup
-                signupOpen={signupOpen}
-                setSignupOpen={setSignupOpen}
-              />
+              <a
+                className={styles["button"]}
+                href="https://chrome.google.com/webstore/detail/oak/ohenjpijmmigfbdbfnmdbonooeihehak"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                download today
+              </a>
             </Grid.Column>
           </Grid>
         </Container>
