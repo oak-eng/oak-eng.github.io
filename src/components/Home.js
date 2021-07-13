@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Card, Container, Grid, Header, Icon, Image } from "semantic-ui-react";
 
 import MediumCard from "./MediumCard.js";
+import { ExtensionMarquee } from "./Extension.js";
 
 import styles from "./Home.module.css";
 
@@ -12,8 +13,7 @@ const mediumArticles = [
     description:
       "Today we focus on another facet of oak — Black-owned businesses — as we take a look at how the pandemic has affected their operations.",
     imageLink: "medium3.png",
-    link:
-      "https://medium.com/@oaksystems/black-owned-businesses-amid-the-coronavirus-pandemic-fb62359f65e4",
+    link: "https://medium.com/@oaksystems/black-owned-businesses-amid-the-coronavirus-pandemic-fb62359f65e4",
   },
   {
     key: 2,
@@ -21,8 +21,7 @@ const mediumArticles = [
     description:
       "COVID-19 has changed every aspect of life as we know it. As students, we’ve dealt with the sudden eviction from campus, the loss of on-campus jobs, the challenges of switching to online classes, and transition back home.",
     imageLink: "medium2.png",
-    link:
-      "https://medium.com/@myoaksystem/black-hair-amidst-a-pandemic-b1c3e1e63fa7?sk=356e71a4b84256ac16388affd28b976d",
+    link: "https://medium.com/@myoaksystem/black-hair-amidst-a-pandemic-b1c3e1e63fa7?sk=356e71a4b84256ac16388affd28b976d",
   },
   {
     key: 1,
@@ -30,8 +29,7 @@ const mediumArticles = [
     description:
       "It’s 7 pm, Sunday night, and I’m listening to one of my co-founders present her weekly deliverables to the team. We’re talking about our beta-launch, strategizing to build a tool that matches and exceeds our customer’s expectations.",
     imageLink: "medium1.png",
-    link:
-      "https://medium.com/@oaksystems/it-started-as-a-class-project-f241ffe0a614",
+    link: "https://medium.com/@oaksystems/it-started-as-a-class-project-f241ffe0a614",
   },
 ];
 
@@ -59,12 +57,23 @@ export default function Home({ mobile }) {
           <h2 className={styles["oak-subtitle"]}>
             never quite fit into the hair type system?
           </h2>
-          <h2 className={styles["oak-subtitle"]}>neither have we.</h2>
+          <h2 className={styles["oak-subtitle"]}>
+            looking for easier ways to shop at and support small Black-owned
+            businesses?
+          </h2>
+          <h2 className={styles["oak-subtitle"]}>
+            you've come to the right place.
+          </h2>
 
           <h3>
-            an in-depth hair profile that will reveal your key haircare factors
-            along with personalized product selections to unlock your healthiest
-            hair.
+            get an in-depth hair profile that will reveal your key haircare
+            factors, and personalized product selections to unlock your
+            healthiest hair.
+          </h3>
+
+          <h3>
+            use our Google Chrome extension to find Black-owned businesses on
+            several platforms, including Amazon, Target, and Walmart.
           </h3>
 
           <div className={styles["marquee-button"]}>
@@ -74,6 +83,15 @@ export default function Home({ mobile }) {
               rel="noopener noreferrer"
             >
               <button className={styles["button"]}>FIND YOUR SYSTEM</button>
+            </a>
+            <a
+              href="https://chrome.google.com/webstore/detail/oak/ohenjpijmmigfbdbfnmdbonooeihehak"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className={styles["extension-button"]}>
+                DOWNLOAD THE EXTENSION
+              </button>
             </a>
           </div>
         </Container>
@@ -111,33 +129,7 @@ export default function Home({ mobile }) {
           </Grid>
         </div>
 
-        <div className={`${rowClass} ${styles["testimonial"]}`}>
-          <Grid
-            columns="equal"
-            centered
-            padded
-            stackable
-            verticalAlign="middle"
-          >
-            <Grid.Row>
-              <Grid.Column>
-                <h1>
-                  "oak is fantastic. they really go into depth figuring out your
-                  individual needs for your hair." - Derek O.
-                </h1>
-              </Grid.Column>
-              <Grid.Column textAlign="center">
-                <a
-                  href="http://consult.myoaksystem.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className={styles["button"]}>get yours today</button>
-                </a>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </div>
+        <ExtensionMarquee />
 
         <div className={rowClass}>
           <Grid columns="equal" padded stackable>
